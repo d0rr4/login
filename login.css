@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sorts Mill Goudy';
+}
+
+@font-face {
+    font-family: 'Sorts Mill Goudy';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/sortsmillgoudy/v15/Qw3GZR9MED_6PSuS_50nEaVrfzgEbHQEj6M7.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+.page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bckgrnd {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url(https://www.jacobs-university.de/sites/default/files/styles/headerimage_small/public/images/head_campus.jpg?itok=ngJQ8atb);
+    background-size: cover;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.cover {
+    background-color: whitesmoke;
+    width: 60%;
+    height: 75%;
+    position: absolute;
+    border-radius: 0em;
+    display: flex;
+    flex-direction: column;
+}
+
+.textbox {
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    right: 0px;
+    height: 100%;
+    border-radius: 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: right;
+    float: right;
+    font-size: 8.5mm;
+}
+
+.textbox img {
+    float: inline-start;
+    width: 48%;
+    height: 8.5%;
+    align-self: center;
+}
+
+.picbox {
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5f974a667b3b17424082088b/9951a1fe-0f59-4c4b-aa85-a2f32e23f82c/AN+IB%26CM+Project+%281%29.png);
+    width: 50%;
+    height: 100%;
+    border-radius: 0em;
+    display: flex;
+    left: 0px;
+}
+
+.button {
+    width: 24%;
+    height: 2.4em;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 2em;
+    cursor: pointer;
+    font-size: 5mm;
+    color: rgb(87, 0, 0);
+}
+
+.button:hover { transform: scale(1.15);}
+
+input {
+    border: 6mm;
+    border-color: rgb(87, 0, 0);
+    background-color: whitesmoke;
+    width: 45%;
+    border-radius: 0em;
+    text-align: left;
+    padding: 3mm;
+    font-size: 4mm;
+}
+
+input:focus {
+    outline-color: rgb(87, 0, 0);
+}
+
+.text {
+    position: relative;
+    bottom: 0.5%;
+}
+
+.hide {
+    position: absolute;
+    transform: scale(0);
+}
+
+.popup {
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transition: 1.5s;
+}
